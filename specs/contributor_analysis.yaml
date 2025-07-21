@@ -1,0 +1,21 @@
+name: Contributor Behavior Context Spec
+description: Extract contributor patterns, habits, and areas of ownership from Git metadata and sample code.
+inputs:
+  - git_log: Raw log filtered by author (e.g., `git log --author="Harshal Sheth"`)
+  - file_diff_summaries: Optional diffs from their most active files
+  - file_heatmap: Optional frequency counts of files modified
+  - code_samples: Optional function/class samples they've written
+outputs:
+  - top_contributor_profile
+  - domain_ownership_summary
+  - coding_philosophy_and_patterns
+  - testing_and_quality_mindset
+  - developer_workflow
+  - onboarding_alignment_guide
+requirements:
+  - Identify language(s) used
+  - Include sample commit messages
+  - Infer test style and design principles
+  - Infer architecture patterns (if possible)
+  - Detect code evolution themes
+  - Support summarization across multiple repos
